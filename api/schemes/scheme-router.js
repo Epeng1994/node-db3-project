@@ -4,6 +4,7 @@ const { checkSchemeId, validateScheme, validateStep } = require('./scheme-middle
 const Schemes = require('./scheme-model.js')
 
 const router = express.Router()
+router.use(express.json())
 
 /**
   [GET] /api/schemes
